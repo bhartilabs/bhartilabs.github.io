@@ -25,10 +25,20 @@
 
         .container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
 
-        /* Header & Hero */
+       /* REVISED CSS FOR THE ICON */
+        .app-icon {
+            width: 96px; /* A bit larger for the real icon */
+            height: 96px;
+            margin: 0 auto 2rem; /* Center and add space below */
+            display: block; /* Ensure it centers correctly */
+            border-radius: 20px; /* Modern, smooth corners for app icons */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            object-fit: contain; /* Ensures the image doesn't stretch */
+        }
+
+        /* Update header spacing slightly */
         header {
-            padding: 4rem 0 2rem;
-            text-align: center;
+            padding: 3rem 0 2rem; /* Less top padding since icon is larger */
             background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
         }
 
@@ -123,7 +133,7 @@
 
 <header>
     <div class="container">
-        <div class="logo-placeholder">iRP</div>
+        <img src="ireducepdf-icon.png" alt="iReducePDF App Icon" class="app-icon">
         <div class="status-badge">Available for Beta Testing</div>
         <h1>iReducePDF</h1>
         <p class="tagline">Professional PDF Compression, 100% Offline.</p>
